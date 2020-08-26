@@ -1,104 +1,131 @@
-<!DOCTYPE html>
-<html>
+<! DOCTYPE html>
+<html lang ="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
-<style>
-
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 15px;
-}
-h3 {
-  margin-bottom: 15px;
-    text-align: right;
-    color: red;
-    margin-right: 7px;
-    font-size: 25px;
+    <meta charset ="UTF-8">
+    <title>Food. LLC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, inital-scale=1.0, maximun-scale=3.0, minimun-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--- cambiar icono en host por url a web icon moon --->
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/920ea8eabf/UntitledProject/style.css">
     
-}
-
-p {
-  border: 1px solid black;
-  background-color: grey;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
-}
-
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid green;
-  }
-  .col-lg-3 {
-    width: 100%;
-  }
-  .col-lg-3 {
-    width: 60%;
-  }
-  .col-lg-3 {
-    width: 90%;
-  }
-  #caca{
-        width: 30%;
-    }
-     #cacac{
-        width: 30%;
-    }
+     <link href="css/gallery.css" rel="stylesheet">
+   
     
-     #cacaca{
-        width: 30%;
-    }
-        
-
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid green;
-  }
- 
-    #caca{
-        width: 45%;
-        background-color: aqua;
-    }
-     #cacac{
-        width: 45%;
-    }
-    
-     #cacaca{
-        width: 100%;
-    }
-  
-}
-
-</style>
-</head>
+    </head>
 <body>
-<h1>Responsive Layout</h1>
+    
+    <header class="main-header">
+    <div class="container2">
+               <h2 class="main__title">Food. LLC </h2>
+               
+           </div> 
+    <div class="container container--flex">
+        <div class="logo-conatiner column column--50">
+        <h1 class="logo"></h1>
+        </div>
+        
+        </div>
+    </header>
+    <nav class="main-nav">
+    <div class="container container--flex">
+        <span class="icon-menu" id="btnmenu">
+        </span>
+        <ul class="menu" id="menu">
+            <li class="menu__item"><a href="#caca" class="menu__link menu__link--select ">Chicken</a></li>
+            <li class="menu__item"><a href="#cacac" class="menu__link">Beef</a></li>
+            <li class="menu__item"><a href="#cacaca" class="menu__link">Sushi</a></li>
+            
+        </ul>
+        
+        </div>
+    </nav>
+    
+    
+    <main class="main-group">
+        <section class="group  group--color">
+           <div class="container" id="caca">
+               <h2 class="main__title">Chicken </h2>
+               <p class="main__txt">Lorem (relleno)</p>
+           </div> 
+        </section>
+        
+         <section class="group  group--color">
+           <div class="container" id="cacac">
+               <h2 class="main__title">Beef </h2>
+               <p class="main__txt">Lorem (relleno)</p>
+           </div> 
+        </section>
+         <section class="group  group--color">
+           <div class="container" id ="cacaca">
+               <h2 class="main__title">Sushi </h2>
+               <p class="main__txt">Lorem (relleno)</p>
+           </div> 
+        </section>
+        
+        <section class="main__about__description">
+            <div class="container conatiner--flex">
+                <div class="column column--50">
+                    
+                </div>
+                
+                    
+            </div>
+        </section>
+        <section class="group today-special">
+            
+        </section>
+        
+        <section class="section banner2">
+        <div class="banner__content2"></div>
+        </section>
+        <div class="group gallery">
+            
+        </div>
+        
+                
+            
+            
+    </main>
+   
+    <form action="enviar.php" method="post" class="formulario2">
+  <h1 class="formulario2__titulo" id="contactenos">Contáctenos</h1>
+  <input type="text" class="formulario2__input" name="nombre">
+  <label for="" class="formulario2__label">Nombres</label>
+  <input type="text" class="formulario2__input" name="correo">
+  <label for="" class="formulario2__label">Correo</label>
+  <input type="text" class="formulario2__input" name="telefono">
+  <label for="" class="formulario2__label">Teléfono</label>
+  <textarea name="mensaje" id="" cols="60" rows="10" class="formulario__textarea" >
+ </textarea>
+  <label for="" class="formulario2__label">Mensaje</label><br>  <br> 
 
-<div class="row">
-  <div id="caca" class="col-lg-3 col-md-6"><h3>Chiken</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquid fuga eveniet saepe, impedit vitae doloribus consequuntur eligendi, obcaecati sed culpa vel eius perspiciatis voluptatibus blanditiis ex aut quibusdam libero.</p></div>
-  <div id="cacac" class="col-lg-3 col-md-6"><h3>Beef</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae excepturi, laudantium esse accusantium porro quidem atque voluptates, commodi incidunt minus tempora debitis, ex at aut perferendis qui iste maxime obcaecati.</p></div>
-  <div id="cacaca" class="col-lg-3 col-md-6"><h3>Sushi</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sequi, molestias magni eius, illum neque, velit, temporibus libero nihil aspernatur voluptatibus quidem id sit eum labore possimus molestiae ab. Facilis!</p></div>
   
-</div>
-
-</body>
+        <input type="submit" class="formulario2__submit"><br>
+  <button type="reset" class="formulario2__submit">Reset</button>
+</form>
+  
+    <footer class="main-footer">
+            <div class="conatiner container--flex">
+                <div class="column column--33">
+                    <h2 class="column__title">¿por que elegirnos</h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero dignissimos doloribus, sit recusandae, soluta nesciunt nisi commodi voluptate, accusamus consectetur officiis pariatur assumenda debitis similique qui blanditiis minus praesentium.</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">Contactanos</h2>
+                    <p class="column__txt">Direccion</p>
+                    <p class="column__txt">telefono</p>
+                    <p class="column__txt">mail</p>
+                </div>
+                <div class="column column--33">
+                   <h2 class="column__title">Siguenos en redes</h2>
+                   <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p> 
+                   <p class="column__txt"><a href="" class="icon-instagram">Instagram</a></p> 
+                   <p class="column__txt"><a href="" class="icon-youtube">Youtube</a></p> 
+                </div>
+                <p class="copy">todos los derechos reservados 2020</p>
+            </div>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/modal.js"></script>
+    </body>
 </html>
